@@ -10,7 +10,7 @@ load_dotenv()
 api_key = st.secrets.get("OPENAI_KEY")
 print(api_key)
 if not api_key:
-    st.error("OpenAI API key is missing!")
+    st.error("OpenAI API key is missing!" + api_key)
     st.stop()
 # open_ai_key = st.secrets["OPENAI_KEY"]["key"]
 # gpt_key = os.getenv('OPENAI_KEY')
