@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 api_key = st.secrets.get("OPENAI_KEY")
-print(api_key)
+st.write("key:", st.secrets["OPENAI_KEY"])
 if not api_key:
     st.error("OpenAI API key is missing!" + api_key)
     st.stop()
