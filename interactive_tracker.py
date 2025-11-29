@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 gpt_key = os.getenv('OPENAI_KEY')
-client=OpenAI(api_key=gpt_key)
+client=OpenAI(api_key=st.secrets["OPENAI_KEY"])
 
 def predict_category(description):
     prompt = f"""
