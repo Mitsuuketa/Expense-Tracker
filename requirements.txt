@@ -1,3 +1,7 @@
-matplotlib
+
 streamlit
 pandas
+matplotlib
+os
+openai
+dotenv
